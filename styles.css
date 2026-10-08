@@ -1,6 +1,7 @@
 body{
     padding: 0px;
     margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /*---HEADER---*/
@@ -8,19 +9,20 @@ body{
 header{
     display: flex;
     color: white;
-    background-color: #061027d7;
+    background-color:#1C2233;
     min-height: 47px;
 }
 
 header nav{
-    margin-left: 450px;
+    margin-left: auto; /*https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/margin-left*/
     display: flex;
     align-items: center;
 }
 
 header nav a{
+    display: block;
     padding: 10px;
-    color: #dceefa;
+    color: #888fa0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: .70em;
     text-decoration: none;
@@ -28,11 +30,11 @@ header nav a{
 
 header nav a#current-page{
     border-radius: 5px;
-    box-shadow: 2px 2px 2px rgba(44, 44, 44, 44);
     background-color: rgb(57, 81, 117);
 }
 
 h1{
+    white-space: nowrap; /*https://www.w3schools.com/cssref/pr_text_white-space.php*/
     font-size: medium;
     font-weight: 400;
     margin-left: 20px;
@@ -43,3 +45,104 @@ h1{
 h1 span.header-slashes{
     color: orange;
 }
+
+/*---FOOTER---*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1C2233;
+    color: white;
+}
+
+footer .footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 250px;
+    width: 100%;
+}
+
+footer .footer h4{
+    margin-bottom: 20px;
+}
+
+footer a{
+    text-decoration: none;
+    color:#888fa0;
+}
+
+footer .footer li{
+    list-style-type: none; /*https://getcssscan.com/blog/how-to-remove-bullets-from-li-css*/
+    margin-top: 10px;
+    font-size: small;
+}
+footer .footer ul {
+    padding-left: 0px;
+}
+
+footer .copyright-statement{
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-size: x-small;
+    color: #888fa0;
+}
+
+footer .copyright-statement hr{
+    border: 1px solid;
+    color: #888fa0;
+    opacity: 10%;
+    width: 100%;
+
+}
+
+/*---BILLBOARD---*/
+
+main .billboard{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 350px;
+    background-color: #30374B;
+    color: white;
+    padding-left: 240px;
+}
+
+main .billboard h2{
+    font-family: serif;
+    font-weight: normal;
+    font-size: 2em;
+    margin-top: 60px;
+    margin-bottom: 0px;
+}
+
+main .billboard p{
+    color: #888fa0;
+    line-height: 22px; /*https://www.w3schools.com/cssref/pr_dim_line-height.php*/
+}
+
+main nav a{
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: x-small;
+    color: #30374B;
+    border-radius: 2px;
+    margin-top: 10px;
+    background-color: rgb(219, 176, 45);
+}
+
+main .braces{
+    position: absolute; /*https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/position*/
+    right: -4px;
+    top: 102px;
+    font-size: 170px;
+    color: #3d4559; 
+    opacity: 20%;
+    margin: 0;
+    pointer-events: none; /*https://www.w3schools.com/cssref/css3_pr_pointer-events.php*/
+}
+
+
