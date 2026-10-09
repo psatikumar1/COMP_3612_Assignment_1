@@ -124,7 +124,7 @@ main .billboard p{
     line-height: 22px; /*https://www.w3schools.com/cssref/pr_dim_line-height.php*/
 }
 
-main nav a{
+main .billboard a{
     text-decoration: none;
     padding: 10px 15px;
     font-size: x-small;
@@ -137,7 +137,7 @@ main nav a{
 
 main .braces{
     position: absolute; /*https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/position*/
-    right: -4px;
+    right: 0px;
     top: 102px;
     font-size: 170px;
     color: #3d4559; 
@@ -207,7 +207,7 @@ main .card p{
     color: #888fa0;
 }
 
-main .card a{
+main .card nav a{
     display: block;
     margin: 10px 10px;
     padding: 10px;
@@ -221,7 +221,7 @@ main .card a{
     color:rgb(57, 81, 117);
 }
 
-main .card a:hover{
+main .card nav a:hover{
     background-color: #1C2233;
     color: white;
 }
@@ -241,4 +241,267 @@ main .why-choose p{
     color:rgb(97, 92, 92);
 }
 
+
+/*---ABOUT-->BILLBOARD---*/
+
+main .about-billboard{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 150px;
+    background-color: #30374B;
+    color: white;
+    padding-left: 280px;
+    position: relative;
+}
+
+main .about-billboard h2{
+    font-family: serif;
+    font-weight: normal;
+    font-size: 1.525em;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+main .about-billboard p{
+    color:#888fa0;
+    font-size: small;
+}
+
+
+main .about-billboard .about-braces{
+    font-size: 140px;
+    position: absolute;
+    right: 0px;
+    top: -20px;   
+    opacity: 20%;
+    margin: 0px;
+    pointer-events: none;
+}
+
+/*---ABOUT-->OUR STORY---*/
+
+main .our-story{
+    background-color: #f1f2f6;
+    padding: 10px 0px;
+    min-height: 150px;
+}
+
+main .our-story article{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .our-story h2{
+    min-width: 120px;
+    font-family: serif;
+    font-weight: normal;
+    font-size: large;
+    margin-left: 150px;
+}
+
+main .our-story p{
+    font-size: small;
+    color: #6c707c;
+    margin-left: 200px;
+    margin-right: 50px;
+    line-height: 20px;
+}
+
+/*---ABOUT-->OUR STORY---*/
+
+main .our-values{
+    padding: 20px;
+}
+
+main .our-values h2{
+    text-align: center;
+    font-family: serif;
+    font-weight: normal;
+    font-size: 1.525em;
+    margin-bottom: 30px;
+}
+
+main .values-cards{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+main .values-card{
+    background-color: #f1f2f6;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: rgb(163, 158, 158);
+    width: 30%;
+    box-sizing: border-box;
+    padding: 10px 15px;
+}
+
+main .values-card .sub-heading{
+    font-family: serif;
+    font-weight: bold
+}
+
+main .values-card .content{
+    font-size: small;
+    color: #6c707c;
+}
+
+main .value-icon-q{
+    display: inline-block;
+    padding: 1px 10px;
+    font-family: "Roboto Mono", monospace;
+    background-color: #1C2233;
+    color: orange;
+    border-radius: 3px;
+}
+
+main .value-icon-s{
+    display: inline-block;
+    padding: 1px 10px;
+    font-family: "Roboto Mono", monospace;
+    background-color: #1C2363;
+    color: greenyellow;
+    border-radius: 3px;
+}
+
+main .value-icon-i{
+    display: inline-block;
+    padding: 1px 10px;
+    font-family: "Roboto Mono", monospace;
+    background-color: #1C2363;
+    color: white;
+    border-radius: 3px;
+}
+
+/*---ABOUT-->MEET OUR TEAM---*/
+
+main .meet-our-team{
+    padding: 30px 120px 25px;
+    background-color: #f1f2f6;
+}
+
+main .meet-our-team h2{
+    text-align: left;
+    font-family: serif;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+main .meet-our-team p{
+    font-size: small;
+    color: #6c707c;
+}
+
+main .team-cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+main .team-card{
+    width: 32%;
+}
+
+main .team-card .thumbnail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    border: 1px solid;
+    border-radius: 2px;
+
+}
+
+main .team-card h3{
+    font-family: serif;
+    font-size: medium;
+    margin-left: 15px;
+    font-family: serif;
+    font-size: small;
+    margin: 10px 0px 0px;
+}
+
+main .team-card .team-role{
+    display: block;
+    color: orange;
+    font-family: "Roboto Mono", monospace;
+    font-size: x-small;
+}
+
+main .team-card p{
+    font-size: x-small;
+    color: #6c707c;
+    line-height: 1.5;
+    margin: 10px 0px 0px;
+    padding: 0px
+}
+
+/*ABOUT-->OUR JOURNEY*/
+
+main .our-journey{
+    padding: 40px 0px;
+}
+
+main .our-journey h2{
+    text-align: center;
+    font-family: serif;
+    font-weight: normal;
+    margin-bottom: 30px;
+} 
+
+main .timeline{
+    border-left: 1px solid;
+    border-color: #3d4559;
+    padding-left: 30px;
+    width: 580px;
+    margin-left: 200px;
+}
+
+main .checkpoint{
+    position: relative;
+    padding-bottom: 20px;
+}
+
+main .checkpoint p{
+    margin: 0px;
+    font-size: small;
+    line-height: 1.25;
+
+}
+
+main .checkpoint .date{
+    font-family: "Roboto Mono", monospace;
+    color: cadetblue;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+
+main .large-dot { /*https://www.w3schools.com/howto/howto_css_circles.asp*/
+    height: 10px;
+    width: 10px;
+    background-color:white;
+    border-radius: 50%;
+    border: 1px solid;
+    border-color: grey;
+    display: inline-block;
+    position: absolute;
+    left: -36px;
+    top: -3px;
+    z-index: -1; /*https://www.w3schools.com/css/css_z-index.asp*/
+}
+
+main .small-dot {
+    height: 5px;
+    width: 5px;
+    background-color: orange;
+    border-radius: 50%;
+    border: 1px solid;
+    border-color: grey;
+    display: inline-block;
+    position: absolute;
+    left: -33px;
+}
 
