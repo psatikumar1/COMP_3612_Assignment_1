@@ -99,7 +99,7 @@ footer .copyright-statement hr{
 
 }
 
-/*---BILLBOARD---*/
+/*---HOME-->BILLBOARD---*/
 
 main .billboard{
     display: flex;
@@ -128,6 +128,7 @@ main nav a{
     text-decoration: none;
     padding: 10px 15px;
     font-size: x-small;
+    font-weight: 900;
     color: #30374B;
     border-radius: 2px;
     margin-top: 10px;
@@ -143,6 +144,101 @@ main .braces{
     opacity: 20%;
     margin: 0;
     pointer-events: none; /*https://www.w3schools.com/cssref/css3_pr_pointer-events.php*/
+}
+
+/*---HOME-->FEATURED PRODUCTS---*/
+
+main .featured-products{
+    padding: 25px;
+    background-color: #f1f2f6;
+}
+
+main .featured-products h3{
+    font-family: serif;
+    font-size: x-large;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+main .cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+main .card{
+    background-color: white;
+    border: 1px solid;
+    border-color: #d5d9e2;
+    border-top: 4px solid;
+    border-top-color: rgb(13, 136, 95);
+    border-radius: 5px;
+    width: 24%;
+}
+
+.card:hover{
+    border-color: tan;
+}
+
+main .thumbnail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f2f6;
+    margin: 0px;
+    padding: 20px;
+}
+
+main .thumbnail img{
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: contain;/*https://www.w3schools.com/css/css3_object-fit.asp*/
+}
+
+main .card h4{
+    margin: 10px 15px;
+    font-size: 0.95em;
+}
+
+main .card p{
+    margin: 10px 15px;
+    font-family: "Roboto Mono", monospace;
+    font-size: 0.85em;
+    color: #888fa0;
+}
+
+main .card a{
+    display: block;
+    margin: 10px 10px;
+    padding: 10px;
+    border: 1px solid;
+    border-color: black;
+    border-radius: 3px;
+    text-align: center;
+    text-decoration: none;
+    font-size: .9em;
+    height: 19px;
+    color:rgb(57, 81, 117);
+}
+
+main .card a:hover{
+    background-color: #1C2233;
+    color: white;
+}
+
+/*---HOME-->WHY CHOOSE---*/
+
+main .why-choose{
+    padding-left: 25px;
+}
+
+main.why-choose h3{
+    font-family: serif;
+}
+
+main .why-choose p{
+    font-size: small;
+    color:rgb(97, 92, 92);
 }
 
 
