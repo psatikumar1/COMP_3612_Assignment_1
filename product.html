@@ -7,7 +7,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet"> 
 
 </head>
-</html>
 
 <body>
     <header>
@@ -21,6 +20,133 @@
         </nav>
     </header>
     
+    <main id = "product-main">
+        <section class = "path">
+            <p>Home > Sweaters > Merino Wool Cable Knit Sweater</p>
+        </section>
+
+        <section class = "product-billboard">
+            <section class = "product-gallery">
+                <figure class = "large-thumbnail">
+                    <img src = "./images/003-medium-front.png" alt = "Merino Wool Sweater">
+                </figure>
+                <figure class = "small-thumbnail">
+                    <img src = "./images/003-thumb-back.png" alt = "Merino Wool Sweater">
+                </figure>
+                <figure class = "small-thumbnail">
+                    <img src = "./images/003-thumb-back-angle.png" alt = "Merino Wool Sweater">
+                </figure>
+                <figure class = "small-thumbnail">
+                    <img src = "./images/003-thumb-front-angle.png" alt = "Merino Wool Sweater">
+                </figure>
+            </section>
+            <section class ="product-information">
+                <h2>Merino Wool<br> Cable Knit<br> Sweater</h2>
+                <p class = "product-rating">★★★★★ (4.8)/5 - 127 reviews</p><!--https://www.html.am/html-codes/character-codes/html-star-code.cfm-->
+                <p class="product-price">$199.99</p>
+                <p class="product-description">This luxurious cable knit sweater is made from 100% merino wool for exceptional warmth and softness. The classic cable pattern adds timeless texture and visual interest to this versatile piece. Natural temperature regulation properties make it perfect for transitional seasons.</p>
+                
+                <form action = "https://www.randyconnolly.com/tests/process.php." method = "get">
+                    <p class = "product-info-subheading">Size:</p> 
+                    <!--https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/radio-->
+                    <section class = "size-options">
+                        <input type="radio" id="xs" name="size" value="xs" checked/>
+                        <label for="xs">XS</label>
+                        <input type="radio" id="s" name="size" value="s"/>
+                        <label for="s">S</label>
+                        <input type="radio" id="m" name="size" value="m"/>
+                        <label for="m">M</label>
+                        <input type="radio" id="l" name="size" value="l"/>
+                        <label for="l">L</label>
+                        <input type="radio" id="xl" name="size" value="xl"/>
+                        <label for="xl">XL</label>
+                        <input type="radio" id="xxl" name="size" value="xxl"/>
+                        <label for="xxl">XXL</label>
+                    </section>
+
+                    <p class = "product-info-subheading">Color:</p>
+                    <section class = "color-options">    
+                        <input type="radio" id="silver" name="color" value="silver" checked/>
+                        <label for="silver" class = "large-dot-silver"></label>
+                        <input type="radio" id="grey" name="color" value="grey"/>
+                        <label for="grey"class = "large-dot-grey"></label>
+                        <input type="radio" id="blue" name="color" value="blue"/>
+                        <label for="blue" class = "large-dot-blue"></label>
+                        <input type="radio" id="orange" name="color" value="orange"/>
+                        <label for="orange" class = "large-dot-orange"></label>
+                    </section>
+
+                    <p class = "product-info-subheading">Quantity:</p>
+                    <section class = "quantity-options">
+                        <input class = "quantity-1" 
+                                type = "number"  
+                                name = "quantity" 
+                                value = "1" 
+                                min = "1" 
+                                max = "100"
+                        ><!--https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/text-->
+                        <input class = "add-to-cart" 
+                                type = "submit"  
+                                value = "Add to Cart"
+                        > <!--https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/submit-->
+                        <nav class = "wishlist">
+                            <a href = "#">Add to Wishlist</a>
+                        </nav>
+                    </section>
+                </form>
+            </section>
+        </section>
+        <section class = "product-metadata">
+            <section class = "metadata-tabs">
+                <a class = "desc-tab" href = "#">Description</a>
+                <a href = "#">Specifications</a>
+                <a href = "#">Care Instructions</a>
+            </section>
+
+            <section class = "product-details">
+                <h2>Product Details</h2>
+                <p>This luxurious cable knit sweater is made from 100% merino wool for exceptional warmth and softness. The classic cable pattern adds timeless texture and visual interest to this versatile piece. Natural temperature regulation properties make it perfect for transitional seasons.</p>
+                <h3>Key Features:</h3>
+                <table class = "features">
+                    <tr>
+                        <td>Material</td>
+                        <td>100% premium merino wool</td>
+                    </tr>
+                    <tr>
+                        <td>Style</td>
+                        <td>Classic cable knit pattern</td>
+                    </tr>
+                    <tr>
+                        <td>Closures</td>
+                        <td>Ribbed cuffs and hem</td>
+                    </tr>
+                    <tr class = "care-row">
+                        <td>Care</td>
+                        <td>Dry clean recommended</td>
+                    </tr>
+                </table>
+            </section>
+        </section>
+
+        <section class = "reviews">
+            <h2>Customer Reviews</h2>
+            <section class = "customer-review">
+                <p class = "reviewer-stars">Maria C.<span class = "stars">★★★★★</span></p>
+                <p class = "review-text">Absolutely stunning sweater! The merino wool is incredibly soft and the cable knit detail is beautiful. Worth the investment.</p>
+                <p class = "review-date">March 10. 2026</p>
+            </section>
+            <section class = "customer-review">
+                <p class = "reviewer-stars">Robert H.<span class = "stars">★★★★☆</span></p>
+                <p class = "review-text">Bought this for our lead software engineer and she loves it. High quality construction and the wool feels luxurious. Fits true to size.</p>
+                <p class = "review-date">March 5. 2026</p>
+            </section>
+            <section class = "customer-review">
+                <p class = "reviewer-stars">Nina F.<span class = "stars">★★★☆☆</span></p>
+                <p class = "review-text">Beautiful sweater but requires dry cleaning which is inconvenient. The quality is excellent though and it's very warm.</p>
+                <p class = "review-date">February 28. 2026</p>
+            </section>
+        </section>
+    </main>
 
     
     
